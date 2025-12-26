@@ -4,17 +4,17 @@ public class Flames {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a name: ");
-        String a = sc.next();
-        System.out.print("\nEnter a name: ");
-        String b = sc.next();    
+        String a[] = {"arpan", "subhajit", "pornab", "adriyan", "aishik", "zayn", "snehal", "sirshoy"};
         
-        int count = countNumberOfLetters(a, b);
-
-        String FinalResult = FlamesCounter(count);
-
-        System.out.println("========== F L A M E S ==========\n"+  FinalResult);
-
+        System.out.println("\n\t========== F L A M E S ==========\n");
+        
+        for(int i = 0; i < a.length; i++){
+            for(int j = i + 1; j < a.length; j++){
+                    System.out.println("\t"+a[i]+" & "+a[j]+" : "+FlamesCounter(countNumberOfLetters(a[i] , a[j])));
+            }
+            System.out.println();
+        }
+        
         sc.close();
     }
 
@@ -66,5 +66,3 @@ public class Flames {
     }
 
 }
-
-
