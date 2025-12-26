@@ -42,7 +42,7 @@ public class Flames {
         int index = 0;
 
         while (flames.length() > 1) {
-            index = (index + n - 1) % flames.length();
+            index = (n - 1) % flames.length();
 
             flames = flames.substring(0, index) + flames.substring(index + 1);
         }
@@ -66,3 +66,4 @@ public class Flames {
     }
 
 }
+
