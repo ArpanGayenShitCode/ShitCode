@@ -13,7 +13,7 @@ public class Flames {
 
         String FinalResult = FlamesCounter(count);
 
-        System.out.println("\n"+  FinalResult);
+        System.out.println("========== F L A M E S ==========\n"+  FinalResult);
 
         sc.close();
     }
@@ -66,4 +66,5 @@ public class Flames {
     }
 
 }
+
 
